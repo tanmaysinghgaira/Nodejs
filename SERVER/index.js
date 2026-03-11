@@ -1,8 +1,8 @@
 const { resolve6 } = require("dns");
 const http = require("http");
 const myserver= http.createServer((req,res)=>{
-    console.log(req.headers);
-    res.end("HELLO FROM SERVER"); //server give you response
+    console.log("NEw REC RECIVE");
+    res.end("HELLO FROM SERVER");
 });
 myserver.listen(7000,()=>console.log("Server started"));
 
